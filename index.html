@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bibliobot – Your Book Assistant</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>📚 Meet Bibliobot</h1>
+    <p>Your friendly book assistant—helping you find the perfect read.</p>
+  </header>
+
+  <main>
+    <section id="chatbox">
+      <!-- Chatbot container -->
+      <div id="bot-container">
+        <!-- Watson Assistant will render here -->
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>✨ Why Bibliobot?</h2>
+      <ul>
+        <li>Recommends books based on your mood, favorite authors, or topics</li>
+        <li>Converses naturally—like chatting with a fellow bookworm</li>
+        <li>Available in multiple languages for inclusive reading joy</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bibliobot. Crafted for curious minds.</p>
+  </footer>
+
+  <!-- Watson Assistant Chat Script -->
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "26ea555f-6af8-4aa2-acb3-0e24cc07c4f9",
+      region: "eu-de",
+      serviceInstanceID: "40a8a1e6-a4ed-479c-b2cc-48f8ec48dbb6",
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
+              (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
+              "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>
