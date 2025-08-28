@@ -1,0 +1,18 @@
+step 1) login to ibm cloud https://cloud.ibm.com/catalog/services/watsonx-assistant ( fir****49***)
+step 2) click "view existing plan"
+step 3) launch watson assistant
+steo 4) click "create assistant" and name it
+step 5) click "add dialog box" and then "create skill"
+step 6)  then create entity, dialog and intent
+
+
+
+now how to modify look of chatbot
+step 1) select assistant 
+step 2) click "preview it" and name the webchat
+
+
+>> "style" choose theme , color and font
+>> "Launcher" click it you will know
+>> "Home screen"  can edit home screen text(important to check)
+>> "Embed"     get ur js code
